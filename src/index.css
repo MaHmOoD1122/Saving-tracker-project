@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@theme {
+  /* الألوان الأساسية المستوحاة من الداشبورد */
+  --color-vault-bg: #f8f8f9; /* لون الخلفية العامة (Off-white / Light Grey ناعم) */
+  --color-vault-card: #ffffff; /* لون الكروت الأبيض النقي */
+  --color-vault-dark: #0f0f11; /* الأسود الغامق المستخدم في الأزرار والعناوين الرئيسية */
+  --color-vault-subtle: #71717a; /* الرمادي للنصوص الثانوية والوصف */
+  --color-vault-border: #e4e4e7; /* لون الحدود الخفيفة للفواصل والكروت */
+  --color-vault-hover: #27272a; /* لون الـ Hover للأزرار السوداء */
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}

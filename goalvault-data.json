@@ -1,0 +1,214 @@
+{
+  "user": {
+    "name": "A. Patel",
+    "monthlyGoalTarget": 2500,
+    "yearlyGoalTarget": 30000
+  },
+  "goals": [
+    {
+      "id": "goal-1",
+      "title": "Malta Summer Trip",
+      "description": "Saving for flights and accommodation",
+      "icon": "plane",
+      "status": "active",
+      "priority": true,
+      "target": 3200,
+      "deadline": "2026-12-23",
+      "deposits": [
+        { "date": "2026-06-01", "amount": 400 },
+        { "date": "2026-06-28", "amount": 50 },
+        { "date": "2026-07-05", "amount": 50 },
+        { "date": "2026-07-12", "amount": 50 },
+        { "date": "2026-07-19", "amount": 400 },
+        { "date": "2026-07-26", "amount": 50 },
+        { "date": "2026-08-02", "amount": 50 },
+        { "date": "2026-08-09", "amount": 50 },
+        { "date": "2026-08-16", "amount": 660 }
+      ]
+    },
+    {
+      "id": "goal-2",
+      "title": "Emergency Fund",
+      "description": "3-6 months buffer",
+      "icon": "car",
+      "status": "active",
+      "priority": false,
+      "target": 10000,
+      "deadline": null,
+      "deposits": [
+        { "date": "2026-02-01", "amount": 1200 },
+        { "date": "2026-03-01", "amount": 300 },
+        { "date": "2026-04-01", "amount": 300 },
+        { "date": "2026-05-01", "amount": 300 },
+        { "date": "2026-06-01", "amount": 2000 },
+        { "date": "2026-07-01", "amount": 2400 },
+        { "date": "2026-08-01", "amount": 700 }
+      ]
+    },
+    {
+      "id": "goal-3",
+      "title": "Professional Course",
+      "description": "Certified data analytics program",
+      "icon": "graduation-cap",
+      "status": "active",
+      "priority": false,
+      "target": 1200,
+      "deadline": "2026-10-09",
+      "deposits": [
+        { "date": "2026-07-15", "amount": 200 },
+        { "date": "2026-08-01", "amount": 100 },
+        { "date": "2026-08-15", "amount": 36 }
+      ]
+    },
+    {
+      "id": "goal-4",
+      "title": "Home Down Payment",
+      "description": "Long term savings plan",
+      "icon": "home",
+      "status": "active",
+      "priority": false,
+      "target": 85000,
+      "deadline": "2029-02-10",
+      "deposits": [
+        { "date": "2026-01-01", "amount": 5000 },
+        { "date": "2026-02-05", "amount": 800 },
+        { "date": "2026-03-05", "amount": 800 },
+        { "date": "2026-04-05", "amount": 800 },
+        { "date": "2026-05-05", "amount": 800 },
+        { "date": "2026-06-05", "amount": 800 },
+        { "date": "2026-07-05", "amount": 4700 },
+        { "date": "2026-08-05", "amount": 5000 }
+      ]
+    },
+    {
+      "id": "goal-5",
+      "title": "New Laptop",
+      "description": "Replace aging work laptop",
+      "icon": "laptop",
+      "status": "paused",
+      "priority": false,
+      "target": 2000,
+      "deadline": null,
+      "deposits": [
+        { "date": "2026-03-01", "amount": 300 },
+        { "date": "2026-03-15", "amount": 200 }
+      ]
+    },
+    {
+      "id": "goal-6",
+      "title": "Wedding Gift Fund",
+      "description": "Saving for a friend's wedding",
+      "icon": "gift",
+      "status": "paused",
+      "priority": false,
+      "target": 500,
+      "deadline": null,
+      "deposits": [
+        { "date": "2026-05-10", "amount": 150 }
+      ]
+    },
+    {
+      "id": "goal-7",
+      "title": "Camera Upgrade",
+      "description": "Mirrorless camera for photography",
+      "icon": "camera",
+      "status": "achieved",
+      "priority": false,
+      "target": 1500,
+      "deadline": "2026-05-01",
+      "deposits": [
+        { "date": "2026-02-01", "amount": 500 },
+        { "date": "2026-03-01", "amount": 500 },
+        { "date": "2026-04-01", "amount": 500 }
+      ]
+    },
+    {
+      "id": "goal-8",
+      "title": "Concert Tickets",
+      "description": "Summer festival tickets",
+      "icon": "ticket",
+      "status": "achieved",
+      "priority": false,
+      "target": 300,
+      "deadline": "2026-06-01",
+      "deposits": [
+        { "date": "2026-05-01", "amount": 300 }
+      ]
+    },
+    {
+      "id": "goal-9",
+      "title": "Bike Repair Fund",
+      "description": "Annual bike maintenance",
+      "icon": "bike",
+      "status": "achieved",
+      "priority": false,
+      "target": 150,
+      "deadline": "2026-04-01",
+      "deposits": [
+        { "date": "2026-03-20", "amount": 150 }
+      ]
+    },
+    {
+      "id": "goal-10",
+      "title": "Gym Membership",
+      "description": "Annual gym membership renewal",
+      "icon": "dumbbell",
+      "status": "achieved",
+      "priority": false,
+      "target": 600,
+      "deadline": "2026-01-15",
+      "deposits": [
+        { "date": "2026-01-01", "amount": 600 }
+      ]
+    },
+    {
+      "id": "goal-11",
+      "title": "Books & Courses",
+      "description": "Learning materials budget",
+      "icon": "book",
+      "status": "achieved",
+      "priority": false,
+      "target": 250,
+      "deadline": "2026-02-20",
+      "deposits": [
+        { "date": "2026-02-01", "amount": 250 }
+      ]
+    },
+    {
+      "id": "goal-12",
+      "title": "Winter Coat",
+      "description": "New coat for winter season",
+      "icon": "shirt",
+      "status": "achieved",
+      "priority": false,
+      "target": 180,
+      "deadline": "2026-01-05",
+      "deposits": [
+        { "date": "2025-12-15", "amount": 180 }
+      ]
+    }
+  ],
+  "scheduledDeposits": [
+    {
+      "id": "sd-1",
+      "goalId": "goal-2",
+      "amount": 300,
+      "frequency": "monthly",
+      "nextDate": "2026-09-01"
+    },
+    {
+      "id": "sd-2",
+      "goalId": "goal-1",
+      "amount": 50,
+      "frequency": "weekly",
+      "nextDate": "2026-08-28"
+    },
+    {
+      "id": "sd-3",
+      "goalId": "goal-4",
+      "amount": 800,
+      "frequency": "monthly",
+      "nextDate": "2026-09-05"
+    }
+  ]
+}
