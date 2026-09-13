@@ -1,14 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 @theme {
   /* الألوان الأساسية المستوحاة من الداشبورد */
   --color-vault-bg: #f8f8f9; /* لون الخلفية العامة (Off-white / Light Grey ناعم) */
   --color-vault-card: #ffffff; /* لون الكروت الأبيض النقي */
   --color-vault-dark: #0f0f11; /* الأسود الغامق المستخدم في الأزرار والعناوين الرئيسية */
-  --color-vault-subtle: #71717a; /* الرمادي للنصوص الثانوية والوصف */
+  --color-vault-subtle: #9b9ba1; /* الرمادي للنصوص الثانوية والوصف */
   --color-vault-border: #e4e4e7; /* لون الحدود الخفيفة للفواصل والكروت */
   --color-vault-hover: #27272a; /* لون الـ Hover للأزرار السوداء */
+
+  /* Font */
+  --font-sans: "Fira Sans", sans-serif;
 }
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
