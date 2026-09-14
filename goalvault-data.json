@@ -49,7 +49,7 @@
       "id": "goal-3",
       "title": "Professional Course",
       "description": "Certified data analytics program",
-      "icon": "graduation-cap",
+      "icon": "graduation",
       "status": "active",
       "priority": false,
       "target": 1200,
@@ -64,7 +64,7 @@
       "id": "goal-4",
       "title": "Home Down Payment",
       "description": "Long term savings plan",
-      "icon": "home",
+      "icon": "house",
       "status": "active",
       "priority": false,
       "target": 85000,
@@ -103,9 +103,7 @@
       "priority": false,
       "target": 500,
       "deadline": null,
-      "deposits": [
-        { "date": "2026-05-10", "amount": 150 }
-      ]
+      "deposits": [{ "date": "2026-05-10", "amount": 150 }]
     },
     {
       "id": "goal-7",
@@ -131,9 +129,7 @@
       "priority": false,
       "target": 300,
       "deadline": "2026-06-01",
-      "deposits": [
-        { "date": "2026-05-01", "amount": 300 }
-      ]
+      "deposits": [{ "date": "2026-05-01", "amount": 300 }]
     },
     {
       "id": "goal-9",
@@ -144,9 +140,7 @@
       "priority": false,
       "target": 150,
       "deadline": "2026-04-01",
-      "deposits": [
-        { "date": "2026-03-20", "amount": 150 }
-      ]
+      "deposits": [{ "date": "2026-03-20", "amount": 150 }]
     },
     {
       "id": "goal-10",
@@ -157,9 +151,7 @@
       "priority": false,
       "target": 600,
       "deadline": "2026-01-15",
-      "deposits": [
-        { "date": "2026-01-01", "amount": 600 }
-      ]
+      "deposits": [{ "date": "2026-01-01", "amount": 600 }]
     },
     {
       "id": "goal-11",
@@ -170,9 +162,7 @@
       "priority": false,
       "target": 250,
       "deadline": "2026-02-20",
-      "deposits": [
-        { "date": "2026-02-01", "amount": 250 }
-      ]
+      "deposits": [{ "date": "2026-02-01", "amount": 250 }]
     },
     {
       "id": "goal-12",
@@ -183,9 +173,7 @@
       "priority": false,
       "target": 180,
       "deadline": "2026-01-05",
-      "deposits": [
-        { "date": "2025-12-15", "amount": 180 }
-      ]
+      "deposits": [{ "date": "2025-12-15", "amount": 180 }]
     }
   ],
   "scheduledDeposits": [

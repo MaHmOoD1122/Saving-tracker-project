@@ -1,14 +1,17 @@
 export default function Button({
   icon,
   text,
-  btnStyle = {},
-  textStyle = {},
+  btnClassName = {},
+  textClassName = {},
   ...rest
 }) {
   return (
-    <button style={btnStyle} {...rest}>
+    <button
+      className={`flex items-center justify-center border-0 outline-0 rounded-full py-2 px-5 gap-2 cursor-pointer transition-all ${btnClassName}`}
+      {...rest}
+    >
       {icon}
-      <span style={textStyle}>{text}</span>
+      <span className={`${textClassName}`}>{text}</span>
     </button>
   );
 }

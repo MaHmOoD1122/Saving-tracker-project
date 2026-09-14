@@ -1,5 +1,9 @@
 import FilterIcon from "../assets/filter.svg?react";
 import GoalCard from "./GoalCard";
+import {
+  goals,
+  user,
+} from "/Saving tracker project/my-react-app/goalvault-data.json";
 export default function GoalsContainer() {
   return (
     <section>
@@ -21,8 +25,10 @@ export default function GoalsContainer() {
           </button>
         </div>
       </div>
-      <div>
-        <GoalCard />
+      <div className="grid grid-cols-2 gap-8">
+        {goals.map((goal) => {
+          return <GoalCard key={goal.id} goal={goal} />;
+        })}
       </div>
     </section>
   );
