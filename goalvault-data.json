@@ -181,6 +181,7 @@
       "id": "sd-1",
       "goalId": "goal-2",
       "amount": 300,
+      "icon": "calendar",
       "frequency": "monthly",
       "nextDate": "2026-09-01"
     },
@@ -188,6 +189,7 @@
       "id": "sd-2",
       "goalId": "goal-1",
       "amount": 50,
+      "icon": "plane",
       "frequency": "weekly",
       "nextDate": "2026-08-28"
     },
@@ -195,6 +197,7 @@
       "id": "sd-3",
       "goalId": "goal-4",
       "amount": 800,
+      "icon": "landmark",
       "frequency": "monthly",
       "nextDate": "2026-09-05"
     }

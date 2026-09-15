@@ -6,7 +6,7 @@ import {
 } from "/Saving tracker project/my-react-app/goalvault-data.json";
 export default function GoalsContainer() {
   return (
-    <section>
+    <section className="max-w-7xl">
       <div className="flex justify-between">
         <div>
           <h2 className="font-medium text-[1.8rem]">Active Goals</h2>
@@ -25,7 +25,7 @@ export default function GoalsContainer() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 gap-10">
         {goals.map((goal) => {
           return <GoalCard key={goal.id} goal={goal} />;
         })}
