@@ -18,7 +18,7 @@ export default function GoalsContainer() {
           <input
             type="search"
             placeholder="Search goals"
-            className="text-[1.3rem] w-full h-full bg-vault-border border-0 rounded-4xl px-4 "
+            className="text-[1.3rem] w-full h-full bg-vault-border border-0 rounded-4xl px-4 outline-0"
           />
           <button className="flex items-center justify-center w-fit py-4 px-6 bg-vault-dark border-0 rounded-4xl cursor-pointer">
             <FilterIcon className="w-7 fill-vault-bg" />

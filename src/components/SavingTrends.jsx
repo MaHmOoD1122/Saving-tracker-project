@@ -1,10 +1,27 @@
 "use client";
-import { LineChart, Line, ResponsiveContainer } from "recharts";
+import {
+  LineChart,
+  Line,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+} from "recharts";
 import data from "/Saving tracker project/my-react-app/goalvault-data.json";
 export default function SavingTrends() {
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth();
+  let allDates = [];
+  data?.goals?.forEach((goal) => {
+    goal?.deposits?.forEach((deposit) => {
+      allDates.push(new Date(deposit.date));
+    });
+  });
+  if (allDates.length === 0) allDates.push(new Date());
+
+  allDates.sort((a, b) => b - a);
+  const latestDate = allDates[0];
+  const currentYear = latestDate.getFullYear();
+  const currentMonth = latestDate.getMonth();
   const previousMonth = currentMonth === 0 ? 11 : currentMonth - 1;
   let currentMonthDeposits = [];
   let previousMonthDeposits = [];
@@ -53,7 +70,7 @@ export default function SavingTrends() {
     <div className="w-30rem bg-vault-bg h-fit p-10 border-0 rounded-4xl">
       <div className="flex justify-between items-center">
         <div className="font-medium flex flex-col gap-3">
-          <p className="text-[1.5rem]">Saving Trends</p>
+          <p className="text-[1.6rem]">Saving Trends</p>
           <p className="text-[1.3rem] text-vault-subtle">
             Short term trend (30 days)
           </p>
@@ -65,6 +82,10 @@ export default function SavingTrends() {
       <div className="w-full h-60 flex-1">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={formattedChartData}>
+            <YAxis />
+            <XAxis dataKey="day" />
+            <Tooltip />
+            <Legend dataKey="current month" />
             <Line
               dataKey={"current"}
               type="monotone"
@@ -83,6 +104,20 @@ export default function SavingTrends() {
             />
           </LineChart>
         </ResponsiveContainer>
+      </div>
+      <div className="flex gap-2 mt-4">
+        <p className="text-[1.3rem] text-vault-subtle">Recent deposit:</p>
+        <span className="text-[1.3rem] font-medium">
+          {allDates
+            .slice(0, 3)
+            .map((date) => {
+              return date.toLocaleString("en-us", {
+                month: "short",
+                day: "2-digit",
+              });
+            })
+            .join(" · ")}
+        </span>
       </div>
     </div>
   );
