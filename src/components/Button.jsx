@@ -7,7 +7,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`flex items-center justify-center border-0 outline-0 rounded-full py-2 px-5 gap-2 cursor-pointer transition-all ${btnClassName}`}
+      className={`flex items-center justify-center border-0 outline-0 rounded-full py-2 px-5 cursor-pointer transition-all duration-300 ${btnClassName}`}
       {...rest}
     >
       {icon}

@@ -4,10 +4,10 @@ import ProgressBar from "./ProgressBar";
 import BellIcon from "../assets/bell.svg?react";
 import ProfileIcon from "../assets/profile.svg?react";
 import { useState } from "react";
+import Button from "./Button";
 
-export default function Navbar() {
+export default function Navbar({ showDepositPopup }) {
   const [show, setShow] = useState(["Monthly", "Yearly"]);
-
   const toggleTab = (tab) => {
     if (show.includes(tab)) {
       setShow(show.filter((item) => item !== tab));
@@ -17,7 +17,7 @@ export default function Navbar() {
   };
   return (
     <nav className="w-full flex justify-between items-center">
-      <div className="flex gap-5">
+      <div className="flex gap-5 items-center">
         <div className="flex items-center gap-3 w-fit">
           <img src={shieldIcon} alt="shield icon" className="w-12" />
           <h1 className="font-semibold text-[1.6rem]">GoalVault</h1>
@@ -69,10 +69,13 @@ export default function Navbar() {
             Yearly
           </button>
         </div>
-        <button className="flex flex-row gap-2 justify-center items-center py-2 px-4 w-fit h-fit bg-vault-dark text-vault-bg border-0 rounded-full">
-          <AddIcon className="w-10" />
-          <span className="text-[1.2rem] font-medium">New Deposit</span>
-        </button>
+        <Button
+          icon={<AddIcon className="w-10" />}
+          text="New Deposit"
+          btnClassName="bg-vault-dark text-vault-bg"
+          textClassName="text-[1.2rem] font-medium"
+          onClick={showDepositPopup}
+        />
       </div>
       <div className="flex gap-8">
         <BellIcon className="w-10" />
