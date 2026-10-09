@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import GoalsContainer from "./components/GoalsContainer";
 import DashboardSidebar from "./components/DashboardSidebar";
 import NewDepositPopup from "./components/NewDepositPopup";
+import data from "../goalvault-data.json";
 import { useState } from "react";
 export default function App() {
   const [showDepositPopup, setShowDepositPopup] = useState(false);
@@ -16,7 +17,10 @@ export default function App() {
         <DashboardSidebar />
       </main>
       {showDepositPopup && (
-        <NewDepositPopup closePopup={() => setShowDepositPopup(false)} />
+        <NewDepositPopup
+          closePopup={() => setShowDepositPopup(false)}
+          data={data}
+        />
       )}
     </>
   );
